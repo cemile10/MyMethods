@@ -47,6 +47,20 @@ class ArrayMethods
         }
         return counter;
     }
+
+    // average 
+
+    public static int Average(int[] arr)
+    {
+        int sum = 0;
+        for(int i=0; i<arr.Length; i++)
+        {
+            sum += arr[i];
+        }
+        return (sum/arr.Length);
+    }
+
+
     // reverse :
     public static int[] Reverse(int[] arr)
     {
@@ -143,6 +157,8 @@ namespace MyProgram
             Console.WriteLine("Maksimum : " + ArrayMethods.Max(array));
 
             Console.WriteLine("array element sayi  " + ArrayMethods.Count(array));
+
+            Console.WriteLine("arrayin ortalamasi " + ArrayMethods.Average(array));
 
             Console.WriteLine("tersine array :");
             int[] arr2 = (ArrayMethods.Reverse(array));
